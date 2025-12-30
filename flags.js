@@ -586,36 +586,48 @@ const flags = {
         { bit: 8388608, name: "PROC_FLAG_DONE_OFFHAND_ATTACK" },
         { bit: 16777216, name: "PROC_FLAG_DEATH" }        
     ],
-    procex: [
-        { bit: 0, name: "PROC_EX_NONE" },
-        { bit: 1, name: "PROC_EX_NORMAL_HIT" },
-        { bit: 2, name: "PROC_EX_CRITICAL_HIT" },
-        { bit: 4, name: "PROC_EX_MISS" },
-        { bit: 8, name: "PROC_EX_RESIST" },
-        { bit: 16, name: "PROC_EX_DODGE" },
-        { bit: 32, name: "PROC_EX_PARRY" },
-        { bit: 64, name: "PROC_EX_BLOCK" },
-        { bit: 128, name: "PROC_EX_EVADE" },
-        { bit: 256, name: "PROC_EX_IMMUNE" },
-        { bit: 512, name: "PROC_EX_DEFLECT" },
-        { bit: 1024, name: "PROC_EX_ABSORB" },
-        { bit: 2048, name: "PROC_EX_REFLECT" },
-        { bit: 4096, name: "PROC_EX_INTERRUPT" },
-        { bit: 8192, name: "PROC_EX_FULL_BLOCK" },
-        { bit: 16384, name: "PROC_EX_RESERVED2" },
-        { bit: 32768, name: "PROC_EX_NOT_ACTIVE_SPELL" },
-        { bit: 65536, name: "PROC_EX_EX_TRIGGER_ALWAYS" },
-        { bit: 131072, name: "PROC_EX_EX_ONE_TIME_TRIGGER" },
-        { bit: 262144, name: "PROC_EX_ONLY_ACTIVE_SPELL" },
-        { bit: 524288, name: "PROC_EX_NO_OVERHEAL" },
-        { bit: 1048576, name: "PROC_EX_NO_AURA_REFRESH" },
-        { bit: 2097152, name: "PROC_EX_ONLY_FIRST_TICK" }        
-    ],
     procspellphase: [
         { bit: 0, name: "PROC_SPELL_PHASE_NONE" },
         { bit: 1, name: "PROC_SPELL_PHASE_CAST" },
         { bit: 2, name: "PROC_SPELL_PHASE_HIT" },
-        { bit: 4, name: "PROC_SPELL_PHASE_FINISH" }        
+        { bit: 4, name: "PROC_SPELL_PHASE_FINISH" }
+    ],
+    procspelltype: [
+        { bit: 0, name: "PROC_SPELL_TYPE_NONE" },
+        { bit: 1, name: "PROC_SPELL_TYPE_DAMAGE" },
+        { bit: 2, name: "PROC_SPELL_TYPE_HEAL" },
+        { bit: 4, name: "PROC_SPELL_TYPE_NO_DMG_HEAL" }
+    ],
+    prochit: [
+        { bit: 0, name: "PROC_HIT_NONE" },
+        { bit: 1, name: "PROC_HIT_NORMAL" },
+        { bit: 2, name: "PROC_HIT_CRITICAL" },
+        { bit: 4, name: "PROC_HIT_MISS" },
+        { bit: 8, name: "PROC_HIT_FULL_RESIST" },
+        { bit: 16, name: "PROC_HIT_DODGE" },
+        { bit: 32, name: "PROC_HIT_PARRY" },
+        { bit: 64, name: "PROC_HIT_BLOCK" },
+        { bit: 128, name: "PROC_HIT_EVADE" },
+        { bit: 256, name: "PROC_HIT_IMMUNE" },
+        { bit: 512, name: "PROC_HIT_DEFLECT" },
+        { bit: 1024, name: "PROC_HIT_ABSORB" },
+        { bit: 2048, name: "PROC_HIT_REFLECT" },
+        { bit: 4096, name: "PROC_HIT_INTERRUPT" },
+        { bit: 8192, name: "PROC_HIT_FULL_BLOCK" }
+    ],
+    procattr: [
+        { bit: 1, name: "PROC_ATTR_REQ_EXP_OR_HONOR" },
+        { bit: 2, name: "PROC_ATTR_TRIGGERED_CAN_PROC" },
+        { bit: 4, name: "PROC_ATTR_REQ_MANA_COST" },
+        { bit: 8, name: "PROC_ATTR_REQ_SPELLMOD" },
+        { bit: 16, name: "PROC_ATTR_USE_STACKS_FOR_CHARGES" },
+        { bit: 128, name: "PROC_ATTR_REDUCE_PROC_60" },
+        { bit: 256, name: "PROC_ATTR_CANT_PROC_FROM_ITEM_CAST" }
+    ],
+    procdisableeffects: [
+        { bit: 1, name: "DISABLE_EFFECT_0" },
+        { bit: 2, name: "DISABLE_EFFECT_1" },
+        { bit: 4, name: "DISABLE_EFFECT_2" }
     ],
     spellstackrules: [
         { bit: 0, name: "SPELL_GROUP_STACK_RULE_DEFAULT" },
