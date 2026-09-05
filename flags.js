@@ -25,6 +25,7 @@ const flags = {
         { bit: 4194304, name: "Stable Master" },
         { bit: 8388608, name: "Guild Banker" },
         { bit: 16777216, name: "Spellclick" },
+        { bit: 33554432, name: "Player Vehicle" },
         { bit: 67108864, name: "Mailbox" }
     ],
     unit_flags: [
@@ -79,7 +80,8 @@ const flags = {
         { bit: 32768, name: "UNIT_FLAG2_CANNOT_TURN" },
         { bit: 65536, name: "UNIT_FLAG2_UNK2" },
         { bit: 131072, name: "UNIT_FLAG2_PLAY_DEATH_ANIM" },
-        { bit: 262144, name: "UNIT_FLAG2_ALLOW_CHEAT_SPELLS" }
+        { bit: 262144, name: "UNIT_FLAG2_ALLOW_CHEAT_SPELLS" },
+        { bit: 16777216, name: "UNIT_FLAG2_UNUSED_6" }
     ],
     unit_dynflag: [
         { bit: 0, name: "UNIT_DYNFLAG_NONE" },
@@ -789,13 +791,35 @@ const flags = {
         { bit: 1, name: "ITEM_FLAG2_FACTION_HORDE" },
         { bit: 2, name: "ITEM_FLAG2_FACTION_ALLIANCE" },
         { bit: 4, name: "ITEM_FLAG2_DONT_IGNORE_BUY_PRICE" },
+        { bit: 8, name: "ITEM_FLAG2_CLASSIFY_AS_CASTER" },
+        { bit: 16, name: "ITEM_FLAG2_CLASSIFY_AS_PHYSICAL" },
+        { bit: 32, name: "ITEM_FLAG2_EVERYONE_CAN_ROLL_NEED" },
+        { bit: 64, name: "ITEM_FLAG2_NO_TRADE_BIND_ON_ACQUIRE" },
+        { bit: 128, name: "ITEM_FLAG2_CAN_TRADE_BIND_ON_ACQUIRE" },
         { bit: 256, name: "ITEM_FLAG2_CAN_ONLY_ROLL_GREED" },
         { bit: 512, name: "ITEM_FLAG2_CASTER_WEAPON" },
+        { bit: 1024, name: "ITEM_FLAG2_DELETE_ON_LOGIN" },
+        { bit: 2048, name: "ITEM_FLAG2_INTERNAL_ITEM" },
+        { bit: 4096, name: "ITEM_FLAG2_NO_VENDOR_VALUE" },
+        { bit: 8192, name: "ITEM_FLAG2_SHOW_BEFORE_DISCOVERED" },
         { bit: 16384, name: "ITEM_FLAG2_OVERRIDE_GOLD_COST" },
+        { bit: 32768, name: "ITEM_FLAG2_IGNORE_DEFAULT_RATED_BG_RESTRICTIONS" },
+        { bit: 65536, name: "ITEM_FLAG2_NOT_USABLE_IN_RATED_BG" },
         { bit: 131072, name: "ITEM_FLAG2_BNET_ACCOUNT_TRADE_OK" },
+        { bit: 262144, name: "ITEM_FLAG2_CONFIRM_BEFORE_USE" },
+        { bit: 524288, name: "ITEM_FLAG2_REEVALUATE_BONDING_ON_TRANSFORM" },
+        { bit: 1048576, name: "ITEM_FLAG2_NO_TRANSFORM_ON_CHARGE_DEPLETION" },
         { bit: 2097152, name: "ITEM_FLAG2_NO_ALTER_ITEM_VISUAL" },
         { bit: 4194304, name: "ITEM_FLAG2_NO_SOURCE_FOR_ITEM_VISUAL" },
-        { bit: 8388608, name: "ITEM_FLAG2_IGNORE_QUALITY_FOR_ITEM_VISUAL_SOURCE" }               
+        { bit: 8388608, name: "ITEM_FLAG2_IGNORE_QUALITY_FOR_ITEM_VISUAL_SOURCE" },
+        { bit: 16777216, name: "ITEM_FLAG2_NO_DURABILITY" },
+        { bit: 33554432, name: "ITEM_FLAG2_ROLE_TANK" },
+        { bit: 67108864, name: "ITEM_FLAG2_ROLE_HEALER" },
+        { bit: 134217728, name: "ITEM_FLAG2_ROLE_DAMAGE" },
+        { bit: 268435456, name: "ITEM_FLAG2_CAN_DROP_IN_CHALLENGE_MODE" },
+        { bit: 536870912, name: "ITEM_FLAG2_NEVER_STACK_IN_LOOT_UI" },
+        { bit: 1073741824, name: "ITEM_FLAG2_DISENCHANT_TO_LOOT_TABLE" },
+        { bit: 2147483648, name: "ITEM_FLAG2_USED_IN_A_TRADESKILL" }
     ],
     bagfamily: [
         { bit: 1, name: "Arrows" },
