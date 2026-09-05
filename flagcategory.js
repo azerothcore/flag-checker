@@ -39,6 +39,13 @@ const flagCategories = {
         { name: "ProcAttr", value: "procattr" },
         { name: "ProcDisableEffects", value: "procdisableeffects" },
         { name: "SpellStackRules", value: "spellstackrules" },
+        { name: "InterruptFlags", value: "InterruptFlags" },
+        { name: "AuraInterruptFlags", value: "AuraInterruptFlags" },
+        { name: "ChannelInterruptFlags", value: "ChannelInterruptFlags" },
+        { name: "Targets", value: "Targets" },
+        { name: "FacingCasterFlags", value: "FacingCasterFlags" },
+        { name: "ShapeshiftMask / ShapeshiftExclude", value: "ShapeshiftMask" },
+        { name: "TargetCreatureType", value: "TargetCreatureType" },
     ],
     quest: [
         { name: "QuestFlags", value: "questflags" },
