@@ -31,7 +31,7 @@ function checkFlags() {
     const inputValueDisplay = document.getElementById('inputValueDisplay');
     inputValueDisplay.textContent = `Flags included for bitmask value: ${inputFlag}`;
 
-    const flagsIncluded = selectedFlags.filter(flag => (inputFlag & flag.bit) !== 0);
+    const flagsIncluded = selectedFlags.filter(flag => flag.bit !== 0 && Math.floor(inputFlag / flag.bit) % 2 === 1);
 
     const flagList = document.getElementById('flagList');
     flagList.innerHTML = '';

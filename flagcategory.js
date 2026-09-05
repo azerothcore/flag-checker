@@ -6,10 +6,15 @@ const flagCategories = {
         { name: "type_flags", value: "type_flags" },
         { name: "flags_extra", value: "flags_extra" },
         { name: "unit_dynflags", value: "unit_dynflag" },
-        { name: "mechanic_immune_mask", value: "mechanic_immune_mask" },
-        { name: "spell_school_immune_mask", value: "spellschoolmask" },
+        { name: "mechanic_immune_mask (legacy)", value: "mechanic_immune_mask" },
+        { name: "spell_school_immune_mask (legacy)", value: "spellschoolmask" },
         { name: "racemask", value: "racemask" },
         { name: "classmask", value: "classmask" },
+    ],
+    immunities: [
+        { name: "MechanicsMask", value: "MechanicsMask" },
+        { name: "SchoolMask", value: "SchoolMask" },
+        { name: "DispelTypeMask", value: "DispelTypeMask" },
     ],
     gameobject: [
         { name: "GameObjectFlags", value: "gameobjectflags" },
