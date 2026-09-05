@@ -18,6 +18,12 @@ window.onload = function() {
     updateFlagOptions();
 };
 
+const immunityCommentFields = {
+    SchoolMask:     { prefix: "school", strip: "SPELL_SCHOOL_MASK_" },
+    DispelTypeMask: { prefix: "dispel", strip: "DISPEL_" },
+    MechanicsMask:  { prefix: "mech",   strip: "MECHANIC_" },
+};
+
 function checkFlags() {
     const selectedCategory = document.getElementById('flagOptions').value;
     const selectedFlags = flags[selectedCategory];
@@ -31,7 +37,7 @@ function checkFlags() {
     const inputValueDisplay = document.getElementById('inputValueDisplay');
     inputValueDisplay.textContent = `Flags included for bitmask value: ${inputFlag}`;
 
-    const flagsIncluded = selectedFlags.filter(flag => (inputFlag & flag.bit) !== 0);
+    const flagsIncluded = selectedFlags.filter(flag => flag.bit !== 0 && Math.floor(inputFlag / flag.bit) % 2 === 1);
 
     const flagList = document.getElementById('flagList');
     flagList.innerHTML = '';
@@ -51,6 +57,8 @@ function checkFlags() {
             block: 'start'
         });
 
+        const commentField = immunityCommentFields[selectedCategory];
+
         // Create the list of flags in the (flag1 | flag2 | flag3 | flag4) format
         const flagNames = flagsIncluded.map(flag => flag.bit);
         const addFlag = `|${flagNames.join('|')}`;
@@ -60,6 +68,20 @@ function checkFlags() {
         const flagHeader = document.createElement('h4');
         flagHeader.textContent = 'Add/Remove the listed flags';
         combinedList.appendChild(flagHeader);
+
+        // creature_immunities Comment entry, e.g. mech=0x4D02440A(CHARM|DISARM|...)
+        if (commentField) {
+            const shortNames = flagsIncluded.map(flag =>
+                flag.name.startsWith(commentField.strip)
+                    ? flag.name.slice(commentField.strip.length)
+                    : flag.name
+            );
+            const commentEntry = `${commentField.prefix}=0x${inputFlag.toString(16).toUpperCase()}(${shortNames.join('|')})`;
+            const commentListItem = document.createElement('li');
+            commentListItem.textContent = commentEntry;
+            combinedList.appendChild(commentListItem);
+        }
+
         const flagStringElement = document.createElement('li');
         flagStringElement.textContent = `\`${selectedCategory}\`=\`${selectedCategory}\`${addFlag}`;
         combinedList.appendChild(flagStringElement);
