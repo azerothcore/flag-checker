@@ -39,8 +39,11 @@ Currently supports
   - SpellSchoolMask
   - DispelMask
   - ProcFlag
-  - ProcEx
+  - ProcSpellType
   - ProcSpellPhase
+  - ProcHit
+  - ProcAttr
+  - ProcDisableEffects
   - SpellStackRules
 
 - Quest

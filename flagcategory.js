@@ -33,8 +33,11 @@ const flagCategories = {
         { name: "SpellSchoolMask", value: "spellschoolmask" },
         { name: "DispelMask", value: "dispelmask" },
         { name: "ProcFlag", value: "procflag" },
-        { name: "ProcEx", value: "procex" },
+        { name: "ProcSpellType", value: "procspelltype" },
         { name: "ProcSpellPhase", value: "procspellphase" },
+        { name: "ProcHit", value: "prochit" },
+        { name: "ProcAttr", value: "procattr" },
+        { name: "ProcDisableEffects", value: "procdisableeffects" },
         { name: "SpellStackRules", value: "spellstackrules" },
     ],
     quest: [
