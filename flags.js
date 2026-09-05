@@ -957,4 +957,26 @@ const flags = {
         { bit: 2048, name: "CREATURE_TYPE_NON_COMBAT_PET" },
         { bit: 4096, name: "CREATURE_TYPE_GAS_CLOUD" }
     ],
+    event_flags: [
+        { bit: 1, name: "SMART_EVENT_FLAG_NOT_REPEATABLE" },
+        { bit: 2, name: "SMART_EVENT_FLAG_DIFFICULTY_0" },
+        { bit: 4, name: "SMART_EVENT_FLAG_DIFFICULTY_1" },
+        { bit: 8, name: "SMART_EVENT_FLAG_DIFFICULTY_2" },
+        { bit: 16, name: "SMART_EVENT_FLAG_DIFFICULTY_3" },
+        { bit: 32, name: "SMART_EVENT_FLAG_RESERVED_5" },
+        { bit: 64, name: "SMART_EVENT_FLAG_RESERVED_6" },
+        { bit: 128, name: "SMART_EVENT_FLAG_DEBUG_ONLY" },
+        { bit: 256, name: "SMART_EVENT_FLAG_DONT_RESET" },
+        { bit: 512, name: "SMART_EVENT_FLAG_WHILE_CHARMED" }
+    ],
+    SmartCastFlags: [
+        { bit: 1, name: "SMARTCAST_INTERRUPT_PREVIOUS" },
+        { bit: 2, name: "SMARTCAST_TRIGGERED" },
+        { bit: 32, name: "SMARTCAST_AURA_NOT_PRESENT" },
+        { bit: 64, name: "SMARTCAST_COMBAT_MOVE" },
+        { bit: 128, name: "SMARTCAST_THREATLIST_NOT_SINGLE" },
+        { bit: 256, name: "SMARTCAST_TARGET_POWER_MANA" },
+        { bit: 512, name: "SMARTCAST_ENABLE_COMBAT_MOVE_ON_LOS" },
+        { bit: 1024, name: "SMARTCAST_MAIN_SPELL" }
+    ],
 };

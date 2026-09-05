@@ -57,6 +57,10 @@ const flagCategories = {
         { name: "BagFamily", value: "bagfamily" },
         { name: "FlagsCustom", value: "flagscustom" },
     ],
+    smartai: [
+        { name: "event_flags", value: "event_flags" },
+        { name: "Cast flags (SMART_ACTION_CAST)", value: "SmartCastFlags" },
+    ],
     other: [
     ],
 }
