@@ -22,6 +22,11 @@ Currently supports
   - racemask
   - classmask
 
+- Immunities (`creature_immunities`)
+  - MechanicsMask
+  - SchoolMask
+  - DispelTypeMask
+
 - GameObject
   - GameObjectFlags
   - GameObjectDynamicLowFlags
@@ -44,7 +49,13 @@ Currently supports
   - ProcHit
   - ProcAttr
   - ProcDisableEffects
-  - SpellStackRules
+  - InterruptFlags
+  - AuraInterruptFlags
+  - ChannelInterruptFlags
+  - Targets
+  - FacingCasterFlags
+  - ShapeshiftMask / ShapeshiftExclude
+  - TargetCreatureType
 
 - Quest
   - QuestFlags
@@ -55,6 +66,17 @@ Currently supports
   - FlagsExtra
   - BagFamily
   - FlagsCustom
+  - ItemFieldFlags
+  - SocketColor
+
+- SmartAI
+  - event_flags
+  - Cast flags (SMART_ACTION_CAST)
+
+- Other
+  - LootMode
+  - disables.flags
+  - npc_spellclick_spells.cast_flags
 
 ## License
 

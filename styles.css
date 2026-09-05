@@ -21,7 +21,8 @@ h1, label, h4 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 500px;
     max-height: 80vh;
-    max-width: 100vh;
+    max-width: 100%;
+    box-sizing: border-box;
     overflow: auto;
 }
 
@@ -31,6 +32,8 @@ h1, label, h4 {
     padding: 5px;
     border-radius: 10px;
     width: 450px;
+    max-width: 100%;
+    box-sizing: border-box;
     overflow: auto;
 }
 

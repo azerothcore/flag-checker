@@ -7,7 +7,7 @@ const flagCategories = {
         { name: "flags_extra", value: "flags_extra" },
         { name: "unit_dynflags", value: "unit_dynflag" },
         { name: "mechanic_immune_mask (legacy)", value: "mechanic_immune_mask" },
-        { name: "spell_school_immune_mask (legacy)", value: "spellschoolmask" },
+        { name: "spell_school_immune_mask (legacy)", value: "spellschoolmask", column: "spell_school_immune_mask" },
         { name: "racemask", value: "racemask" },
         { name: "classmask", value: "classmask" },
     ],
@@ -38,7 +38,13 @@ const flagCategories = {
         { name: "ProcHit", value: "prochit" },
         { name: "ProcAttr", value: "procattr" },
         { name: "ProcDisableEffects", value: "procdisableeffects" },
-        { name: "SpellStackRules", value: "spellstackrules" },
+        { name: "InterruptFlags", value: "InterruptFlags" },
+        { name: "AuraInterruptFlags", value: "AuraInterruptFlags" },
+        { name: "ChannelInterruptFlags", value: "ChannelInterruptFlags" },
+        { name: "Targets", value: "Targets" },
+        { name: "FacingCasterFlags", value: "FacingCasterFlags" },
+        { name: "ShapeshiftMask / ShapeshiftExclude", value: "ShapeshiftMask" },
+        { name: "TargetCreatureType", value: "TargetCreatureType" },
     ],
     quest: [
         { name: "QuestFlags", value: "questflags" },
@@ -49,7 +55,17 @@ const flagCategories = {
         { name: "FlagsExtra", value: "flagsextra" },
         { name: "BagFamily", value: "bagfamily" },
         { name: "FlagsCustom", value: "flagscustom" },
+        { name: "ItemFieldFlags (item_instance.flags)", value: "ItemFieldFlags", column: "flags" },
+        // A socket holds a single colour, not an OR-able mask, so there is no update snippet.
+        { name: "SocketColor", value: "socketColor", column: null },
+    ],
+    smartai: [
+        { name: "event_flags", value: "event_flags" },
+        { name: "Cast flags (SMART_ACTION_CAST)", value: "SmartCastFlags", column: "action_param2" },
     ],
     other: [
+        { name: "LootMode (*_loot_template)", value: "LootMode", column: "lootmode" },
+        { name: "disables.flags (spell)", value: "disables_flags", column: "flags" },
+        { name: "npc_spellclick_spells.cast_flags", value: "cast_flags" },
     ],
 }
