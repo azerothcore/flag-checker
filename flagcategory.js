@@ -56,6 +56,8 @@ const flagCategories = {
         { name: "FlagsExtra", value: "flagsextra" },
         { name: "BagFamily", value: "bagfamily" },
         { name: "FlagsCustom", value: "flagscustom" },
+        { name: "ItemFieldFlags (item_instance.flags)", value: "ItemFieldFlags" },
+        { name: "SocketColor", value: "socketColor" },
     ],
     smartai: [
         { name: "event_flags", value: "event_flags" },
