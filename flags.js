@@ -691,17 +691,6 @@ const flags = {
         { bit: 2, name: "DISABLE_EFFECT_1" },
         { bit: 4, name: "DISABLE_EFFECT_2" }
     ],
-    spellstackrules: [
-        { bit: 0, name: "SPELL_GROUP_STACK_RULE_DEFAULT" },
-        { bit: 1, name: "SPELL_GROUP_STACK_RULE_EXCLUSIVE" },
-        { bit: 2, name: "SPELL_GROUP_STACK_FLAG_NOT_SAME_CASTER" },
-        { bit: 4, name: "SPELL_GROUP_STACK_FLAG_FLAGGED" },
-        { bit: 8, name: "SPELL_GROUP_STACK_FLAG_NEVER_STACK" },
-        { bit: 16, name: "SPELL_GROUP_STACK_FLAG_EFFECT_EXCLUSIVE" },
-        // { bit: 32, name: "SPELL_GROUP_STACK_FLAG_MAX" },
-        { bit: 256, name: "SPELL_GROUP_STACK_FLAG_FORCED_STRONGEST (internal use)" },
-        { bit: 512, name: "SPELL_GROUP_STACK_FLAG_FORCED_WEAKEST (internal use)" }               
-    ],
     gameobjectflags: [
         { bit: 1, name: "GO_FLAG_IN_USE" },
         { bit: 2, name: "GO_FLAG_LOCKED" },

@@ -38,7 +38,6 @@ const flagCategories = {
         { name: "ProcHit", value: "prochit" },
         { name: "ProcAttr", value: "procattr" },
         { name: "ProcDisableEffects", value: "procdisableeffects" },
-        { name: "SpellStackRules", value: "spellstackrules" },
         { name: "InterruptFlags", value: "InterruptFlags" },
         { name: "AuraInterruptFlags", value: "AuraInterruptFlags" },
         { name: "ChannelInterruptFlags", value: "ChannelInterruptFlags" },

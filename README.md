@@ -49,7 +49,6 @@ Currently supports
   - ProcHit
   - ProcAttr
   - ProcDisableEffects
-  - SpellStackRules
   - InterruptFlags
   - AuraInterruptFlags
   - ChannelInterruptFlags
