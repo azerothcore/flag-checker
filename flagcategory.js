@@ -64,5 +64,8 @@ const flagCategories = {
         { name: "Cast flags (SMART_ACTION_CAST)", value: "SmartCastFlags" },
     ],
     other: [
+        { name: "LootMode (*_loot_template)", value: "LootMode" },
+        { name: "disables.flags (spell)", value: "disables_flags" },
+        { name: "npc_spellclick_spells.cast_flags", value: "cast_flags" },
     ],
 }

@@ -1019,4 +1019,26 @@ const flags = {
         { bit: 4, name: "SOCKET_COLOR_YELLOW" },
         { bit: 8, name: "SOCKET_COLOR_BLUE" }
     ],
+    LootMode: [
+        { bit: 1, name: "LOOT_MODE_DEFAULT" },
+        { bit: 2, name: "LOOT_MODE_HARD_MODE_1" },
+        { bit: 4, name: "LOOT_MODE_HARD_MODE_2" },
+        { bit: 8, name: "LOOT_MODE_HARD_MODE_3" },
+        { bit: 16, name: "LOOT_MODE_HARD_MODE_4" },
+        { bit: 32768, name: "LOOT_MODE_JUNK_FISH" }
+    ],
+    disables_flags: [
+        { bit: 1, name: "SPELL_DISABLE_PLAYER" },
+        { bit: 2, name: "SPELL_DISABLE_CREATURE" },
+        { bit: 4, name: "SPELL_DISABLE_PET" },
+        { bit: 8, name: "SPELL_DISABLE_DEPRECATED_SPELL" },
+        { bit: 16, name: "SPELL_DISABLE_MAP" },
+        { bit: 32, name: "SPELL_DISABLE_AREA" },
+        { bit: 64, name: "SPELL_DISABLE_LOS" }
+    ],
+    cast_flags: [
+        { bit: 1, name: "NPC_CLICK_CAST_CASTER_CLICKER" },
+        { bit: 2, name: "NPC_CLICK_CAST_TARGET_CLICKER" },
+        { bit: 4, name: "NPC_CLICK_CAST_ORIG_CASTER_OWNER" }
+    ],
 };
